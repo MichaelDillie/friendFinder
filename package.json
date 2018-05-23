@@ -1,0 +1,26 @@
+{
+  "name": "friendFinder",
+  "version": "1.0.0",
+  "description": "Friend Finder will help you find the best possible friend.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelDillie/friendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelDillie/friendFinder/issues"
+  },
+  "homepage": "https://github.com/MichaelDillie/friendFinder#readme"
+}
