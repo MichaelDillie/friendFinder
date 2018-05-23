@@ -9,14 +9,11 @@ var PORT = process.env.PROT || 8088;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "/public/home.html"));
-});
+// app.get("/", function(req, res) {
+//   res.sendFile(path.join(__dirname, "/public/home.html"));
+// });
 
-app.get("/survey", function(req, res) {
-  res.sendFile(path.join(__dirname, "/public/survey.html"));
-});
-
+require("./routing/htmlRoutes", app);
 
 // Starts server
 app.listen(PORT, function() {
