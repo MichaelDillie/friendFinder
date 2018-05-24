@@ -193,6 +193,8 @@
     $("#submit").on("click", function(event) {
       event.preventDefault();
 
+      console.log("clciked");
+
       var userData = {
         name: $("#name").val().trim(),
         photo: $("#photo").val().trim(),
@@ -212,9 +214,9 @@
 
       console.log(userData);
 
-        $.post("/api/friends", userData, function(data) {
-          console.log("DID THIS FUCKING WORK");
-        });
+      $.post("/api/friends", userData, function(data) {
+        console.log("POSTED");
+      });
 
     });
   </script>
