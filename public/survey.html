@@ -213,11 +213,24 @@
       }
 
       console.log(userData);
+      alert("Your survey has be saved");
 
       $.post("/api/friends", userData, function(data) {
         console.log("POSTED");
       });
 
+      $("#name").val("");
+      $("#photo").val("");
+      $("#q1").val("");
+      $("#q2").val("");
+      $("#q3").val("");
+      $("#q4").val("");
+      $("#q5").val("");
+      $("#q6").val("");
+      $("#q7").val("");
+      $("#q8").val("");
+      $("#q9").val("");
+      $("#q10").val("");
     });
   </script>
 

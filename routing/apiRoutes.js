@@ -6,6 +6,9 @@ module.exports = function(app) {
   });
 
   app.post("/api/friends", function(req, res) {
+    for(var i = 0; i < friendsData.length; i++) {
+      
+    }
     friendsData.push(req.body);
   });
 }
