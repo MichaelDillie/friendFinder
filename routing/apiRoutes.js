@@ -9,8 +9,8 @@ module.exports = function (app) {
     var newResults = (req.body['scores']).map(Number);
     var totalDifference = 100;
     var friendIndex;
-    for (var i = 0; i < friends.length; i++) {
-      var firendResults = friends[i]['scores'];
+    for (var i = 0; i < friendsData.length; i++) {
+      var firendResults = friendsData[i]['scores'];
 
       var tempDifference = 0;
       for (var j = 0; j < newResults.length; j++) {
@@ -21,7 +21,7 @@ module.exports = function (app) {
         friendIndex = i;
       }
     }
-    res.json(friends[friendIndex]);
-    friends.push(req.body);
+    res.json(friendsData[friendIndex]);
+    friendsData.push(req.body);
   });
 }
